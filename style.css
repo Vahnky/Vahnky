@@ -394,6 +394,9 @@ span.C{
     position :fixed;
     bottom:1em;
 
+
+    transition: transform 2s;
+
 }
 
 .slogo{
