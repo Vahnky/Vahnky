@@ -47,17 +47,6 @@
 
 
 
-window.addEventListener('scroll', () => {
-  const logo = document.querySelector('.logo');
-  if (window.scrollY > 0) {
-      logo.style.transform = 'translateX(-500%)';
-  } else {
-      logo.style.transform = 'translateX(0)';
-  }
-});
-
-
-
 
 
 
@@ -82,8 +71,19 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 
 
+const observer2 = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry)
+    if (entry.isIntersecting){
+      entry.target.classList.add('show2');
+    } else {
+      entry.target.classList.remove('show2');
+    }
+  });
+});
 
-
+const hiddenElements2 = document.querySelectorAll('.hidden2');
+hiddenElements2.forEach((el) => observer2.observe(el))
 
 
 
@@ -134,6 +134,25 @@ setInterval(() => {
       star.remove();
   }, 800);
 }, 100);
+
+
+
+
+
+window.addEventListener('scroll', () => {
+  const logo = document.querySelector('.logo');
+  if (window.scrollY > 0) {
+      logo.style.transform = 'translateX(-500%)';
+  } else {
+      logo.style.transform = 'translateX(0)';
+  }
+});
+
+
+
+
+
+
 
 
 
