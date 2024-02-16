@@ -1635,7 +1635,7 @@ iframe{width:35em;}
 
 
 
-@media screen and (max-width: 1400px) and (max-height:1400px){
+@media screen and (min-width:1101px) and (max-width: 1400px) and (max-height:1400px){
 
 
     .lec{display:none;}
@@ -1813,5 +1813,5 @@ iframe{width:35em;}
 iframe{width:35em;}
 
 
-
+.la{display:none;}
 }
