@@ -391,7 +391,7 @@ span.C{
     flex-direction: row;
     justify-content: space-around;
    
-    position:absolute;
+    position :fixed;
     bottom:1em;
 
 }
