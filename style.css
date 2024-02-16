@@ -674,6 +674,7 @@ iframe{
         width:5em;
         height:100%;
         margin-left:0.5em;
+        margin-top:-11em;
     }
 
     .logo{
@@ -838,6 +839,7 @@ iframe{
         width:5em;
         height:100%;
         margin-left:0.5em;
+        margin-top:-15em;
     }
 
     .logo{
@@ -998,7 +1000,7 @@ iframe{
     img.rs{
         width:5em;
         height:100%;
-        margin-left:0.5em;
+        margin-left:0.9em;
     }
 
     .logo{
@@ -1814,4 +1816,5 @@ iframe{width:35em;}
 
 
 .la{display:none;}
+
 }
