@@ -84,6 +84,9 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 
 
+
+
+
 const cursor = document.getElementById('cursor');
 cursor.style.position = 'absolute';
 
@@ -120,6 +123,8 @@ setInterval(() => {
       star.remove();
   }, 800);
 }, 100);
+
+
 
 
 const buttons = document.querySelectorAll('a#titr')
