@@ -105,8 +105,9 @@ h1 span{
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: one;
-    font-size: 100px;
-    width:80px;
+    font-size: 5em;
+    width:1em;
+    margin-top:-1em;
 
 }
 
