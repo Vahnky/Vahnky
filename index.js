@@ -84,30 +84,42 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 
 
+const cursor = document.getElementById('cursor');
+cursor.style.position = 'absolute';
+
 
 let cursorX = 0;
 let cursorY = 0;
 
+let scrollY = window.scrollY;
+
 window.addEventListener('mousemove', (e) => {
     const cursor = document.getElementById('cursor');
-    cursorX = e.pageX;
-    cursorY = e.pageY;
+    cursorX = e.clientX;
+    cursorY = e.clientY;
     cursor.style.left = `${cursorX - cursor.offsetWidth / 2}px`;
-    cursor.style.top = `${cursorY - cursor.offsetHeight / 2}px`;
+    cursor.style.top = `${cursorY + scrollY - cursor.offsetHeight / 2}px`;
 });
 
+window.addEventListener('scroll', () => {
+    scrollY = window.scrollY;
+    const cursor = document.getElementById('cursor');
+    cursor.style.top = `${cursorY + scrollY - cursor.offsetHeight / 2}px`; // Mettez à jour la position du curseur pendant le défilement
+});
+
+
+
 setInterval(() => {
-    const star = document.createElement('div');
-    star.classList.add('star');
-    star.style.left = `${cursorX + (Math.random() * 100 - 50)}px`;
-    star.style.top = `${cursorY + (Math.random() * 100 - 50)}px`;
-    document.body.appendChild(star);
+  const star = document.createElement('div');
+  star.classList.add('star');
+  star.style.left = `${cursorX + (Math.random() * 100 - 50)}px`;
+  star.style.top = `${cursorY + scrollY + (Math.random() * 100 - 50)}px`; // Ajoutez le défilement à la position de l'étoile
+  document.body.appendChild(star);
 
-    setTimeout(() => {
-        star.remove();
-    }, 800);
+  setTimeout(() => {
+      star.remove();
+  }, 800);
 }, 100);
-
 
 
 const buttons = document.querySelectorAll('a#titr')
@@ -128,7 +140,7 @@ buttons.forEach(btn => {
       ripples.remove();
     }, 200);
 
-    // Ouvre le lien après que l'animation soit terminée (ici, après 1 seconde)
+    // Ouvre le lien après que l'animation soit terminée
     setTimeout(() => {
       window.open(btn.getAttribute('href'), '_blank');
     }, 200);
