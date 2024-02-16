@@ -474,7 +474,7 @@ iframe{
     .lec{display:none;}
 
 
-
+    body{display:none;}
     .div1{
         width:100%;
         overflow:hidden;
@@ -884,7 +884,7 @@ iframe{
         text-align: center;
        
 
-        bottom:3em;
+        bottom:4em;
         left:-3.5em;
         margin-left:0em;
 
