@@ -527,8 +527,8 @@ iframe{
         justify-content: flex-start;
         text-align: center;
        
-        position:absolute;
-        bottom:0.7em;
+
+        bottom:11em;
         left:0.5em;
 
     
@@ -865,7 +865,7 @@ iframe{
         text-align: center;
        
 
-        bottom:1em;
+        bottom:4em;
         left:-3.5em;
         margin-left:0em;
 
@@ -1041,7 +1041,7 @@ iframe{
         text-align: center;
        
 
-        bottom:5em;
+        bottom:22em;
         left:-3.5em;
         margin-left:0em;
 
@@ -1217,7 +1217,7 @@ iframe{
         text-align: center;
        
 
-        bottom:5em;
+        bottom:29em;
         left:-3.5em;
         margin-left:0em;
 
