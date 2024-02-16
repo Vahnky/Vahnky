@@ -1213,7 +1213,7 @@ iframe{
     }
 
     p.centered-text{
-        margin:0;
+        margin-left:0.5em;
     }
 
     
@@ -1388,7 +1388,7 @@ iframe{
     }
 
     p.centered-text{
-        margin:0;
+        margin-left:0.35em;
     }
 
     
@@ -1451,6 +1451,10 @@ iframe{
 
 
 }
+
+
+
+
 
 
 
