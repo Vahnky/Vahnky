@@ -46,6 +46,15 @@
 
 
 
+window.addEventListener('scroll', () => {
+  const logo = document.querySelector('.logo');
+  if (window.scrollY > 0) {
+      logo.style.display = 'none';
+  } else {
+      logo.style.display = 'flex';
+  }
+});
+
 
 
 
