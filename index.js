@@ -46,14 +46,16 @@
 
 
 
+
 window.addEventListener('scroll', () => {
   const logo = document.querySelector('.logo');
   if (window.scrollY > 0) {
-      logo.style.display = 'none';
+      logo.style.transform = 'translateX(-500%)';
   } else {
-      logo.style.display = 'flex';
+      logo.style.transform = 'translateX(0)';
   }
 });
+
 
 
 
